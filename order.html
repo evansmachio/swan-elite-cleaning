@@ -1,0 +1,242 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Order a Service | Swan Elite</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="assets/swan-elite-logo.png">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container nav-wrap">
+
+            <a href="index.html" class="brand">
+                <img
+                    src="assets/swan-elite.jpg"
+                    alt="Swan Elite Logo"
+                    class="brand-logo">
+
+                <span>
+                    <strong>SWAN ELITE</strong>
+                    <small>CLEANING & PEST CONTROL SERVICES</small>
+                </span>
+            </a>
+
+            <button
+                class="menu-toggle"
+                type="button"
+                aria-label="Toggle navigation">
+                ☰
+            </button>
+
+            <nav class="nav" id="mainNav">
+                <a href="services.html">Services</a>
+                <a href="order.html" class="active">Order Service</a>
+                <a href="index.html">Home</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+
+        </div>
+    </header>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+        <div class="container center">
+
+            <span class="eyebrow">BOOK OUR SERVICES</span>
+
+            <h1>Order a Service</h1>
+
+            <p>
+                Fill in the form below and send your request
+                directly to Swan Elite through WhatsApp.
+            </p>
+
+        </div>
+    </section>
+
+    <!-- ORDER SECTION -->
+    <section class="order-section">
+        <div class="container order-container">
+
+            <!-- ORDER INFORMATION -->
+            <div class="order-info">
+
+                <span class="eyebrow">SWAN ELITE</span>
+
+                <h2>Let's take care of your space.</h2>
+
+                <p>
+                    Select the service you need and provide
+                    your preferred appointment details.
+                </p>
+
+                <div class="order-contact">
+
+                    <p>
+                        📞
+                        <strong>0793 525 224</strong>
+                    </p>
+
+                    <p>
+                        ✉
+                        <strong>zackjuma07@gmamil.com</strong>
+                    </p>
+
+                    <p>
+                        📍
+                        <strong>Nairobi City, Kenya</strong>
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- ORDER FORM -->
+            <form id="orderForm" class="order-form">
+
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Enter your full name"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+
+                    <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        placeholder="e.g. 0793525224"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label for="service_id">Select Service</label>
+
+                    <select
+                        id="service_id"
+                        name="service_id"
+                        required>
+
+                        <option value="">
+                            -- Select a Service --
+                        </option>
+
+                    </select>
+                </div>
+
+                <div class="form-row">
+
+                    <div class="form-group">
+                        <label for="preferred_date">
+                            Preferred Date
+                        </label>
+
+                        <input
+                            type="date"
+                            id="preferred_date"
+                            name="preferred_date"
+                            required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="preferred_time">
+                            Preferred Time
+                        </label>
+
+                        <input
+                            type="time"
+                            id="preferred_time"
+                            name="preferred_time"
+                            required>
+                    </div>
+
+                </div>
+
+                <div class="form-group">
+                    <label for="location">Service Location</label>
+
+                    <input
+                        type="text"
+                        id="location"
+                        name="location"
+                        placeholder="e.g. Westlands, Nairobi"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">
+                        Additional Information
+                    </label>
+
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="5"
+                        placeholder="Tell us anything else we should know..."></textarea>
+                </div>
+
+                <button
+                    type="submit"
+                    class="btn btn-green order-submit">
+
+                    Send Order via WhatsApp →
+
+                </button>
+
+                <p class="form-note">
+                    Your order will first be saved securely
+                    in our system before WhatsApp is opened.
+                </p>
+
+            </form>
+
+            <!-- ORDER RESPONSE MESSAGE -->
+            <div
+                id="orderMessage"
+                class="order-message"
+                aria-live="polite">
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container footer-wrap">
+
+            <div>
+                <strong>SWAN ELITE</strong>
+
+                <p>Cleaning & Pest Control Services</p>
+            </div>
+
+            <p>
+                © <span id="year"></span>
+                Swan Elite. Nairobi, Kenya.
+            </p>
+
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script src="js/script.js"></script>
+    <script src="js/order.js"></script>
+
+</body>
+</html>
